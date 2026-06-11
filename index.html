@@ -9,16 +9,51 @@
 <body>
 
     <div class="container">
-        <div class="board">
-            <div class="cell cell0"></div>
-            <div class="cell cell1"></div>
-            <div class="cell cell2"></div>
-            <div class="cell cell3"></div>
-            <div class="cell cell4"></div>
-            <div class="cell cell5"></div>
-            <div class="cell cell6"></div>
-            <div class="cell cell7"></div>
-            <div class="cell cell8"></div>
+
+
+        <div id="setup">
+            <input id="p1-input" type="text" placeholder="Player 1 name" />
+            <input id="p2-input" type="text" placeholder="Player 2 name" />
+            <button id="start-btn">Start game</button>
+        </div>
+
+
+        <div id="game" style="display:none;">
+
+            <div class="scoreboard">
+                <div class="score-card">
+                    <div id="p1-label">Player 1</div>
+                    <div id="score-p1">0</div>
+                </div>
+                <div class="score-card">
+                    <div>Draws</div>
+                    <div id="score-draws">0</div>
+                </div>
+                <div class="score-card">
+                    <div id="p2-label">Player 2</div>
+                    <div id="score-p2">0</div>
+                </div>
+            </div>
+
+            <div id="turn-indicator"></div>
+
+            <div class="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+
+            <div id="result"></div>
+
+            <button id="restart-btn" style="display:none;">Play again</button>
+            <button id="new-game-btn">New game</button>
+
         </div>
     </div>
 
